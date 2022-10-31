@@ -292,3 +292,34 @@ print(type(n1))
 print(type(n2))
 print(type(n3))
 ```
+
+### **CASTING**
+
+In alcuni momentisi desidera specificare un tipo su una variabile, questo può essere fatto con il casting. Python è un linguaggio orientato agli oggetti e come tale utilizza le classi per definire i tipi di dati, inclusi i suoi tipi primitivi.
+
+Il cast in Python viene eseguito utilizzando le funzioni di costruzione:
+
+- `int()`: Costruisce un numero intero da un intero letterale, un float letterale (rimuovendo tutti i decimali) o una stringa letterale (a condizione che la stringa rappresenti un numero intero)
+
+```python
+n1 = int(1)   # n1 sarà 1
+n2 = int(2.8) # n2 sarà 2
+n3 = int("3") # n3 sarà 3
+```
+
+- `float()`: Costruisce un numero float da un intero letterale, un float letterale o una stringa letterale (a condizione che la stringa rappresenti un float o un intero)
+
+```python
+n1 = float(1)     # n1 sarà 1.0
+n2 = float(2.8)   # n2 sarà 2.8
+n3 = float("3")   # n3 sarà 3.0
+n4 = float("4.2") # n4 sarà 4.2
+```
+
+- `str()`: Costruisce una stringa da un'ampia varietà di tipi di dati, incluse stringhe, letterali interi e letterali float
+
+```python
+n1 = str("s1") # n1 sarà 's1'
+n2 = str(2)    # n2 sarà '2'
+n3 = str(3.0)  # n3 sarà '3.0'
+```
