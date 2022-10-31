@@ -323,3 +323,44 @@ n1 = str("s1") # n1 sarà 's1'
 n2 = str(2)    # n2 sarà '2'
 n3 = str(3.0)  # n3 sarà '3.0'
 ```
+
+### **STRINGHE**
+
+Le stringhe in Python sono racchiuse tra virgolette singole o virgolette doppie.
+
+`"ciao"` è lo stesso di `'ciao'`.
+
+```python
+# Stampa la stringa con doppi apici
+print("ciao")
+# Stampa la stringa con singoli apici
+print('ciao')
+```
+
+### **STRINGHE MULTILINEA**
+
+È possibile assegnare una stringa multilinea a una variabile utilizzando tre doppi apici:
+
+```python
+print("""
+Stringa
+multilinea
+con
+doppi
+apici
+.
+""")
+```
+
+O tre apici singoli:
+
+```python
+print('''
+Stringa
+multilinea
+con
+singoli
+apici
+.
+''')
+```
