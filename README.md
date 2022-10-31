@@ -325,6 +325,7 @@ n3 = str(3.0)  # n3 sarà '3.0'
 ```
 
 ### **STRINGHE**
+### **STRINGHE**
 
 Le stringhe in Python sono racchiuse tra virgolette singole o virgolette doppie.
 
@@ -451,4 +452,56 @@ Il metodo `split()` restituisce un elenco in cui il testo tra il separatore spec
 stringa = 'testo paragrafo'
 print(stringa.strip(','))
 # OUTPUT: ['testo', ' paragrafo!']
+```
+
+### **CONCATENAZIONE DI STRINGHE**
+
+Per concatenare o combinare due o più stringhe è possibile utilizzare l'operatore `+`.
+
+```python
+stringa1 = 'ciao'
+stringa2 = ' '
+stringa3 = 'mondo'
+# Stringhe concatenate
+print(stringa1 + stringa2 + stringa3)
+# OUTPUT: ciao mondo
+```
+
+### **FORMATTA STRINGHE**
+
+Combinare due tipi di dati non è possibile, quindi il seguente esempio non è possibile:
+
+```python
+anni = 36
+testo = "Ho " + anni + " anni"
+print(testo)
+```
+
+Ma possiamo combinare stringhe e numeri usando il metodo `format()`, che prende gli argomenti passati, li formatta e li inserisce nella stringa in cui si trovano i segnaposto `{}`:
+
+```python
+anni = 36
+testo = "Ho {} anni."
+# Inseriamo i numeri della variabile anni nella stringa testo tramite {}
+print(testo.format(anni))
+```
+
+### **SEQUENZE DI FUGA (ESCAPE SEQUENCES)**
+
+Per inserire caratteri non validi in una stringa, utilizzare un carattere di escape, esso è una barra rovesciata `\` seguita dal carattere che si desidera inserire.
+
+Un esempio di carattere illegale è una doppia virgoletta all'interno di una stringa racchiusa tra virgolette doppie:
+
+```python
+testo = 'Questo è 'un testo tra virgolette'.'
+print(testo)
+# ERRORE
+```
+
+Per risolvere questo problema, usa il carattere di escape `\'`; esso consente di utilizzare l'apice singolo quando normalmente non sarebbe consentito:
+
+```python
+testo = 'Questo è \'un testo tra virgolette\'.'
+print(testo)
+# OUTPUT: Questo è 'un testo tra virgolette'.
 ```
