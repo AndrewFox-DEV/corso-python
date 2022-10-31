@@ -63,3 +63,136 @@ print(n2)
 print(n3)
 # Notiamo che quando stampiamo a schermo 
 ```
+
+### **VARIABILI**
+
+Python non ha un comando per dichiarare le variabili, quindi una variabile viene creata nel momento in cui gli viene assegnato un valore. Le variabili non devono essere dichiarate quindi con un particolare tipo di dato, e possono essere cambiate dopo essere state impostate.
+
+```python
+# Creiamo una variabile di tipo stringa di nome var_stringa e gli assegnamo il valore "questa e' una stringa"
+var_stringa = "questa e' una stringa"
+# E stampiamo a schermo con la funzione print() imparata in precedenza
+print(var_stringa)
+```
+
+#### **ASSEGNAMO PIÙ VALORI A PIÙ VARIABILI**
+
+```python
+# Creiamo tre variabili di tipo intero
+# Assegnamogli i valori 4, 3 e 10 alle variabili n1, n2, n3
+n1, n2, n3 = 4, 3, 10
+# Stampiamo a schermo
+print(n1)
+print(n2)
+print(n3)
+# Notiamo che quando stampiamo a schermo i valori vanno a capo
+# Per farli stare sulla stessa riga facciamo
+print(n1, n2, n3)
+# L'utilizzo delle due modalità di output dipende da cosa si sta facendo
+```
+
+### **VARIABILI**
+
+Python non ha un comando per dichiarare le variabili, quindi una variabile viene creata nel momento in cui gli viene assegnato un valore. Le variabili non devono essere dichiarate quindi con un particolare tipo di dato, e possono essere cambiate dopo essere state impostate.
+
+```python
+# Creiamo una variabile di tipo stringa di nome var_stringa e gli assegnamo il valore "questa e' una stringa"
+var_stringa = "questa e' una stringa"
+# E stampiamo a schermo con la funzione print() imparata in precedenza
+print(var_stringa)
+```
+
+#### **ASSEGNAMO PIÙ VALORI A PIÙ VARIABILI**
+
+```python
+# Creiamo tre variabili di tipo intero
+# Assegnamogli i valori 4, 3 e 10 alle variabili n1, n2, n3
+n1, n2, n3 = 4, 3, 10
+# Stampiamo a schermo
+print(n1)
+print(n2)
+print(n3)
+# Notiamo che quando stampiamo a schermo i valori vanno a capo
+# Per farli stare sulla stessa riga facciamo
+print(n1, n2, n3)
+# L'utilizzo delle due modalità di output dipende da cosa si sta facendo
+```
+
+#### **VARIABILI GLOBALI**
+
+Le variabili create al di fuori di una funzione (che poi vedremo, per ora sappi che se vedi scritto `def nome_funzione()` è una funzione) sono note come variabili globali; esse possono essere utilizzate da tutti, sia all'interno delle funzioni che all'esterno.
+
+1. Crea una variabile fuori da una funzione e utilizzala all'interno della funzione
+
+```python
+# Dichiarata la variabile n ed assegnato il valore 10
+n = 10
+
+# Chiamata (ossia creata) la funzione numero()
+def numero():
+    # Stampata la variabile
+    print(n)
+
+# Richiamata la funzione numero() per farla eseguire (altrimenti non veniva eseguita)
+funzione()
+```
+
+Se crei una variabile con lo stesso nome all'interno di una funzione, questa sarà locale e potrà essere utilizzata solo all'interno di quella determinata funzione, la variabile globale con lo stesso nome rimarrà com'era, globale e con il valore originale.
+
+```python
+# Dichiarata la variabile n ed assegnato il valore 10
+n = 10
+
+# Chiama la funzione numero()
+def numero():
+    # Dichiarata la variabile n (locale) ed assegnato il valore 19
+    n = 19
+    # Stampa il valore 19 della variabile n
+    print(n)
+
+# Richiamata la funzione numero
+# Stamperà il valore 19 essendo una variabile locale nella funzione
+numero()
+
+# Stamperà il valore 10
+print(n)
+```
+
+### **PAROLA CHIAVE: global**
+Di norma, quando crei una variabile all'interno di una funzione, quella variabile è locale e può essere utilizzata solo all'interno di quella funzione; per creare una variabile globale all'interno di una funzione, puoi utilizzare la parola chiave `global`.
+
+```python
+# Chiamta la funzione numero
+def numero():
+    # Creata la variabile n all'ambito globale
+    global n
+    # Alla variabile n assegnato il valore 10
+    n = 10
+
+# Richiamata la funzione numero()
+numero()
+
+# Stampato il valore di n
+print(n)
+```
+
+Inoltre, utilizzare la parola chiave `global` se si desidera modificare una variabile globale all'interno di una funzione.
+
+```python
+# Dichiarata la variabile n ed assegnato il valore 10
+n = 10
+
+# Chiama la funzione numero()
+def numero():
+    # Dichiarata la variabile n (globale)
+    global n
+    # Assegnamo il valore 19 alla variabile n
+    n = 19
+
+# Richiamata la funzione numero
+numero()
+
+# Stamperà il valore 19 perché la variabile ha cambiato il suo valore impostato
+print(n)
+```
+
