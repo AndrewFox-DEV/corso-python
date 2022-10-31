@@ -364,3 +364,5 @@ apici
 .
 ''')
 ```
+
+**NOTA**: Nel risultato, le interruzioni di riga vengono inserite nella stessa posizione del codice.
