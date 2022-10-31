@@ -196,3 +196,99 @@ numero()
 print(n)
 ```
 
+### **TIPI DI DATI**
+
+Nella programmazione, il tipo di dato è un concetto importante, le variabili possono memorizzare dati di tipi diversi e tipi diversi possono fare cose diverse, Python ha i seguenti tipi di dati integrati per impostazione predefinita, in queste categorie:
+
+|                   |                                    |
+|:-----------------:|:----------------------------------:|
+|   TIPO DI TESTO   |                `str`               |
+|   TIPI NUMERICI   |      `int`, `float`, `complex`     |
+|  TIPI DI SEQUENZA |      `list`, `tuple`, `range`      |
+| TIPO DI MAPPATURA |               `dict`               |
+|    TIPI DI SET    |         `set`, `frozenset`         |
+|   TIPO BOOLEANO   |               `bool`               |
+|    TIPI BINARI    | `bytes`, `bytearray`, `memoryview` |
+|    NESSUN TIPO    |             `NoneType`             |
+
+Per ottenere il tipo di dato utilizzare la funzione `type()`, come nel seguente esempio:
+```python
+# Dichiarare la variabile numero_intero ed assegnargli il valore 10
+numero_intero = 10
+# Stampare a schermo il tipo di dato attraverso la funzione type()
+print(type(numero_intero))
+# L'output darà <class 'int'> cioè che il tipo di dato è di valore intero
+```
+
+### **NUMERI**
+
+Ci sono tre tipi numerici in Python:
+1. int
+2. float
+3. complex
+
+#### **TIPO DI DATO: int**
+
+È un numero intero, positivo o negativo, senza decimali, di lunghezza illimitata.
+
+```python
+# Dichiaro la varibile n1 e assegno un valore positivo
+n1 = 1
+# Dichiaro la varibile n2 e assegno un valore positivo molto lungo
+n2 = 43238619021881818
+# Dichiaro la varibile n3 e assegno un valore negativo
+n3 = -9929318
+
+# Stampo a schermo il tipo di dato di tutti e tre i valori delle variabili
+# Essi saranno tutti di tipo intero, quindi l'output sarà <class 'int'>
+print(type(n1))
+print(type(n2))
+print(type(n3))
+```
+
+#### **TIPO DI DATO: float**
+
+È un "numero a virgola mobile", può essere positivo o negativo, contenente uno o più decimali. Il float può anche essere utilizzato per numeri scientifici con una "e" per indicare la potenza di 10.
+
+```python
+# Dichiaro la varibile n1 e assegno un valore positivo con più decimali
+n1 = 1.81
+# Dichiaro la varibile n2 e assegno un valore positivo con un decimale
+n2 = 1.2
+# Dichiaro la varibile n3 e assegno un valore negativo
+n3 = -1.91
+# Dichiaro la varibile n3 e assegno un valore positivo scientifico
+n4 = 35e3
+# Dichiaro la varibile n3 e assegno un valore positivo scientifico
+n5 = 12E4
+# Dichiaro la varibile n3 e assegno un valore negativo scientifico
+n6 = -87.7e100
+
+# Stampo a schermo il tipo di dato di tutti e tre i valori delle variabili
+# Essi saranno tutti di tipo decimale, quindi l'output sarà <class 'float'>
+print(type(n1))
+print(type(n2))
+print(type(n3))
+print(type(n4))
+print(type(n5))
+print(type(n6))
+```
+
+#### **TIPO DI DATO: complex**
+
+I numeri complessi sono scritti con una "j" come parte immaginaria:
+
+```python
+# Dichiaro la varibile n1 e assegno un "espressione" positiva complessa
+n1 = 3+2j
+# Dichiaro la varibile n2 e assegno un valore positivo complesso
+n2 = 1j
+# Dichiaro la varibile n3 e assegno un valore negativo complesso
+n3 = -9j
+
+# Stampo a schermo il tipo di dato di tutti e tre i valori delle variabili
+# Essi saranno tutti di tipo decimale, quindi l'output sarà <class 'float'>
+print(type(n1))
+print(type(n2))
+print(type(n3))
+```
