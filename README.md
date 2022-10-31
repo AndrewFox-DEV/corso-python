@@ -365,4 +365,90 @@ apici
 ''')
 ```
 
-**NOTA**: Nel risultato, le interruzioni di riga vengono inserite nella stessa posizione del codice.
+#### **NOTA**: Nel risultato, le interruzioni di riga vengono inserite nella stessa posizione del codice.
+
+### **STRINGHE AFFETTATE**
+
+Puoi restituire un intervallo di caratteri usando la sintassi della sezione puoi specificare l'indice iniziale e l'indice finale, separati da due punti, per restituire una parte della stringa.
+
+```python
+stringa = 'ciao sei veramente bello'
+# Stampo l'intervallo dalla prima posizione alla nona
+print(stringa[1:9])
+# OUTPUT: iao sei
+```
+
+#### **NOTA**: La stringa è un array quindi il primo carattere ha indice 0.
+
+Tralasciando l'indice iniziale, l'intervallo inizierà dal primo carattere:
+
+```python
+stringa = 'ciao sei veramente bello'
+# Stampo l'intervallo dall'inizio fino all'ottavo carattere
+print(stringa[:9])
+# OUTPUT: ciao sei v
+```
+
+Tralasciando l' indice finale , l'intervallo andrà alla fine:
+
+```python
+stringa = 'ciao sei veramente bello'
+# Stampo l'intervallo fino alla fine dal secondo carattere
+print(stringa[2:])
+# OUTPUT: ao sei veramente bello
+```
+
+Usa gli indici negativi per iniziare la sezione dalla fine della stringa:
+
+```python
+stringa = 'ciao sei veramente bello'
+# Stampo l'intervallo fino alla fine dal secondo carattere
+print(stringa[-10:-3])
+# OUTPUT: ente be
+```
+
+### **MODIFICA LE STRINGHE**
+
+Python ha una serie di metodi integrati che puoi usare sulle stringhe.
+
+Il metodo `upper()` restituisce la stringa in maiuscolo:
+
+```python
+stringa = 'testo...'
+print(stringa.upper())
+# OUTPUT: TESTO...
+```
+
+Il metodo `lower()` restituisce la stringa in minuscolo:
+
+```python
+stringa = 'TESTO...'
+print(stringa.lower())
+# OUTPUT: testo...
+```
+
+Il metodo `strip()` rimuove qualsiasi spazio bianco dall'inizio o dalla fine:
+
+```python
+stringa = ' testo. . .'
+print(stringa.strip())
+# OUTPUT: testo...
+```
+
+### **SOSTITUZIONE STRINGHE**
+
+Il metodo `replace()` sostituisce una stringa con un'altra stringa:
+
+```python
+stringa = 'TESTO'
+print(stringa.replace('T', '4'))
+# OUTPUT: 4ES4O
+```
+
+Il metodo `split()` restituisce un elenco in cui il testo tra il separatore specificato diventa gli elementi dell'elenco, quindi divide la stringa in sottostringhe se trova istanze del separatore:
+
+```python
+stringa = 'testo paragrafo'
+print(stringa.strip(','))
+# OUTPUT: ['testo', ' paragrafo!']
+```
