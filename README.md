@@ -505,3 +505,34 @@ testo = 'Questo è \'un testo tra virgolette\'.'
 print(testo)
 # OUTPUT: Questo è 'un testo tra virgolette'.
 ```
+
+### **BOOLEANI**
+
+I booleani rappresentano uno dei due valori: `True` o `False`. Nella programmazione è spesso necessario sapere se un'espressione è booleana; puoi valutare qualsiasi espressione in Python e ottenere una delle due risposte.
+
+Quando si confrontano due valori, l'espressione viene valutata e Python restituisce la risposta booleana:
+
+```python
+print(10 > 0)
+# Stamperà True perché 10 è maggiore di 0
+```
+
+La funzione `bool()` consente di valutare qualsiasi valore e di dare `True` o `False` in cambio:
+
+```python
+print(bool('Hello')
+# Stamperà True
+```
+
+Quasi ogni valore viene valutato `True` se ha una sorta di contenuto, quindi qualsiasi stringa è `True`, eccetto le stringhe vuote, qualsiasi numero è `True`, tranne 0 e qualsiasi elenco, tupla, set e dizionario sono `True`, tranne quelli vuoti. In effetti, non ci sono molti valori che restituiscono `False`, tranne valori vuoti, come `()`, `[]`, `{}`, `""`, il numero `0` e il valore `None`, e ovviamente il valore `False` è `False`.
+
+```python
+print(bool(False))
+print(bool(None))
+print(bool(0))
+print(bool(""))
+print(bool(()))
+print(bool([]))
+print(bool({}))
+# Stamperà sempre False
+```
