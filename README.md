@@ -536,3 +536,91 @@ print(bool([]))
 print(bool({}))
 # Stamperà sempre False
 ```
+
+### **OPERATORI**
+
+Gli operatori vengono utilizzati per eseguire operazioni su variabili e valori.
+
+Python divide gli operatori nei seguenti gruppi:
+
+- Operatori aritmetici
+- Operatori di assegnazione
+- Operatori di confronto
+- Operatori logici
+- Operatori di identità
+- Operatori associativi
+- Operatori bit a bit
+
+Gli operatori aritmetici vengono utilizzati con valori numerici per eseguire operazioni matematiche comuni:
+
+| **OPERATORE** |     **NOME**    | **ESEMPIO** |
+|:-------------:|:---------------:|:-----------:|
+|       +       |    addizione    |    x + y    |
+|       -       |   sottrazione   |    x - y    |
+|       *       | moltiplicazione |    x * y    |
+|       /       |    divisione    |    x / y    |
+|       %       |      modulo     |    x % y    |
+|       **      |   esponenziale  |    x ** y   |
+|       //      | divisione piano |    x // y   |
+
+Gli operatori di assegnazione vengono utilizzati per assegnare valori alle variabili:
+
+| **OPERATORE** | **ESEMPIO** | **UGUALE A** |
+|:-------------:|:-----------:|:------------:|
+|       =       |    x = 3    |     x = 3    |
+|       +=      |    x += 4   |   x = x + 4  |
+|       -=      |    x -= 6   |   x = x - 6  |
+|       *=      |    x *= 4   |   x = x * 4  |
+|       /=      |    x /= 8   |   x = x / 8  |
+|       %=      |    x %= 4   |   x = x % 4  |
+|      **=      |   x **= 2   |  x = x ** 2  |
+|      //=      |   x //= 3   |  x = x // 3  |
+|       &=      |    x &= 4   |   x = x & 4  |
+|      \|=      |   x \|= 3   |  x = x \| 3  |
+|       ^=      |    x ^= 3   |   x = x ^ 3  |
+|      >>=      |   x >>= 5   |  x = x >> 5  |
+|      <<=      |   x <<= 2   |  x = x << 2  |
+
+Gli operatori di confronto vengono utilizzati per confrontare due valori:
+
+| **OPERATORE** |     **NOME**    | **ESEMPIO** |
+|:-------------:|:---------------:|:-----------:|
+|       ==      |     uguale a    |    x == y   |
+|       !=      |     diverso     |    x != y   |
+|       >       |     maggiore    |    x > y    |
+|       <       |      minore     |    x < y    |
+|       >=      | maggiore uguale |    x >= y   |
+|       <=      |  minore uguale  |    x <= y   |
+
+Gli operatori logici vengono utilizzati per combinare istruzioni condizionali:
+
+| **OPERATORE** |                          **DESCRIZIONE**                         |      **ESEMPIO**      |
+|:-------------:|:----------------------------------------------------------------:|:---------------------:|
+|      and      |      restituisce True se entrambe le affermazioni sono vere      |    x < 8 and x < 10   |
+|       or      |         restituisce True se una delle affermazioni è vera        |    x < 9 or x < 12    |
+|      not      | invertire il risultato, restituisce False se il risultato è vero | not(x < 7 and x < 10) |
+
+Gli operatori di identità vengono utilizzati per confrontare gli oggetti, non se sono uguali, ma se sono effettivamente lo stesso oggetto, con la stessa posizione di memoria:
+
+| **OPERATORE** |                            **DESCRIZIONE**                           | **ESEMPIO** |
+|:-------------:|:--------------------------------------------------------------------:|:-----------:|
+|       is      |   restituisce True se entrambe le variabili sono lo stesso oggetto   |    x is y   |
+|     is not    | restituisce True se entrambe le variabili non sono lo stesso oggetto |  x is not y |
+
+Gli operatori di appartenenza vengono utilizzati per verificare se una sequenza è presentata in un oggetto:
+
+| **OPERATORE** |                                     **DESCRIZIONE**                                    | **ESEMPIO** |
+|:-------------:|:--------------------------------------------------------------------------------------:|:-----------:|
+|       in      |   restituisce True se nell'oggetto è presente una sequenza con il valore specificato   |    x in y   |
+|     in not    | restituisce True se nell'oggetto non è presente una sequenza con il valore specificato |  x not in y |
+
+Gli operatori bit per bit vengono utilizzati per confrontare i numeri (binari):
+
+| **OPERATORE** |                  **NOME**                  |                                              **DESCRIZIONE**                                             |
+|:-------------:|:------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
+|       &       |                     AND                    |                              imposta ogni bit su 1 se entrambi i bit sono 1                              |
+|       \|      |                     OR                     |                               imposta ogni bit su 1 se uno dei due bit è 1                               |
+|       ^       |                     XOR                    |                             imposta ogni bit su 1 se solo uno dei due bit è 1                            |
+|       ~       |                     NOT                    |                                            inverte tutti i bit                                           |
+|       <<      | spostamento a sinistra di riempimento zero |            sposta a sinistra spingendo gli zeri da destra e lascia cadere i bit più a sinistra           |
+|       >>      |           firmato turno di destra          | sposta a destra spingendo le copie del bit più a sinistra da sinistra e lascia cadere i bit più a destra |
